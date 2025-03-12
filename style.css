@@ -1,160 +1,217 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    background-color: rgb(249, 224, 174);
-    margin-bottom: 3rem;
-}
-nav ul{
-    display: flex;
-    gap: 6rem;
-    align-items: center;
-}
-nav ul li{
-    font-size: 25px;
-    font-weight: 800;
-    list-style: none;
-}
-nav ul li button{
-    padding: .5rem 2.5rem;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    /* align-items: center; */
-    background-color: rgb(194, 73, 20);
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-section{
-    margin-bottom: 3rem;
-    padding: 0rem 0rem 0rem 8rem;
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+  width: 100%;
+  background-color: #f9e0ae;
+  padding: 0 119px;
 }
-section div{
-    width: 50%;
-}
-
-section h1{
-    font-size: 60px;
-    font-weight: 900;
-    padding-bottom: 1.5rem;
-}
-section p{
-    font-size: 25px;
-    color: rgb(178, 178, 178);
-    padding-bottom: 1.5rem;
-}
-section button{
-    padding: .5rem 2.5rem;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    /* align-items: center; */
-    background-color: rgb(104, 44, 14);
-}
-.section_img{
-    width: 70%
-}
-section ul{
-    font-size: 25px;
-    line-height: 50px;
+.nav_logo {
+  display: flex;
+  align-items: center;
 }
 
-
-aside{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 4rem; */
-    margin-bottom: 5rem;
-    /* margin: 4rem auto; */
-    margin-left: 5rem;
-    margin-right: 5rem;
-    gap: 4rem;
-    background-color: rgb(249, 224, 174);
-    padding: 3rem;
-   
-}
-aside input{
-    padding: 1rem 4rem;
-    /* border-radius: 10px; */
-    font-size: 20px;
-    text-align: center;
+.nav_content {
 }
 
-header{
-    /* position: relative; */
-    padding: 0rem 5rem;
-    line-height: 50px;
-   margin-bottom: 4.5rem;
+.nav_logo h1 {
+  font-family: "Jim Nightshade", cursive;
+  font-size: 40px;
+}
+nav ul {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+nav ul li {
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+}
+nav ul li button {
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  height: 39px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  /* align-items: center; */
+  background-color: rgb(194, 73, 20);
 }
 
-header h1{
-    font-size: 60px;
-    font-weight: 900;
-    padding-bottom: 1.5rem;
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 119px;
+}
+section div {
+  width: 50%;
+}
+section div img {
+  width: 100%;
+  height: 100%;
+}
+section h1 {
+  font-size: 60px;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+section p {font-size: 25px;
+  
+  color: rgb(178, 178, 178);
+  padding-bottom: 1.5rem;
+}
+section button {
+  padding: 0.5rem 2.5rem;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  /* align-items: center; */
+  background-color: rgb(104, 44, 14);
+}
+.section_img {
+  width: 70%;
+}
+section ul {
+  font-size: 25px;
+  line-height: 50px;
 }
 
-header p{
-    font-size: 20px;
-    color: rgb(178, 178, 178);
-    padding-bottom: 1.5rem;
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 4rem; */
+  /* margin-bottom: 5rem; */
+  /* margin: 4rem auto; */
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
+  margin: 0rem 5rem 5rem 2.5rem;
+  gap: 4rem;
+  background-color: rgb(249, 224, 174);
+  padding: 3rem;
+}
+aside input {
+  padding: 1rem 4rem;
+  /* border-radius: 10px; */
+  font-size: 20px;
+  text-align: center;
 }
 
-header img{
-    margin-bottom: 2rem;
-    /* float: right; */
-    /* position: absolute; */
+aside button{
+  padding: 1rem 4rem;
+  font-size: 20px;
+  font-weight: 700; 
+  color: white; 
+  background-color: rgb(194, 73, 20);
 }
 
-header button{
-    padding: .5rem 2.5rem;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    /* align-items: center; */
-    background-color: rgb(194, 73, 20);
+header {
+  /* position: relative; */
+  padding: 0rem 5rem;
+  line-height: 50px;
+  margin-bottom: 4.5rem;
 }
 
-.header_content{
-    position: relative;
+header h1 {
+  font-size: 60px;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
 }
 
-.big_image{
-    position: absolute;
-    top: 0;
-    left: 70%;
+header p {
+  font-size: 20px;
+  color: rgb(178, 178, 178);
+  padding-bottom: 1.5rem;
 }
 
-.small_image{
-    position: absolute;
-    /* width: 2%;
+header img {
+  margin-bottom: 2rem;
+  /* float: right; */
+  /* position: absolute; */
+}
+
+header button {
+  padding: 0.5rem 2.5rem;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  /* align-items: center; */
+  background-color: rgb(194, 73, 20);
+}
+
+.header_content {
+  position: relative;
+}
+
+.big_image {
+  position: absolute;
+  top: 0;
+  left: 70%;
+}
+
+.small_image {
+  position: absolute;
+  /* width: 2%;
     height: 10px; */
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(249, 224, 174);
-    padding: 7rem;
-    clear: both;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(249, 224, 174);
+  padding: 7rem;
+  clear: both;
 }
 
-@media only screen and (max-width:760px) {
+.footer_logo{
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo h1{
+  font-family: "Jim Nightshade", cursive;
+  font-size: 40px;
+}
+
+footer div li{
+  list-style: circle;
+}
+
+footer div li a{
+  color: rgb(80, 79, 79);
+  text-decoration: none;
+}
+
+.copy_right{
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: #f9e0ae;
+}
+
+.copy_right_all{
+  display: block;
+}
+
+/* @media only screen and (max-width:760px) {
     .nav_content{
         display: none;
     }
@@ -186,4 +243,86 @@ aside{
     background-color: rgb(249, 224, 174);
 }
 }
+ */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+  }
+  .nav_content {
+    display: none;
+  }
 
+  .nav_logo h1 {
+    font-size: 25px;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  section div {
+    width: 100%;
+  }
+
+  section div p{
+    font-size: 15px;
+  }
+
+  section div h1{
+    font-size: 30px;
+  }
+
+  section div ul{
+    font-size: 15px;
+  }
+  /* section h1{
+    font-size: 30px;
+  }
+  section p{
+    font-size: 15px;
+  } */
+  section button{
+    padding: 0.25rem 1.2rem;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .section_two{
+    flex-direction: column-reverse;
+  }
+  aside{
+    flex-direction: column;
+    /* width: 100%; */
+    background-color: white;
+  } 
+  aside input{
+    padding: 0.5rem 2rem;
+  font-size: 15px;
+  }
+  aside button{
+    padding: 0.5rem 2rem;
+    font-size: 15px;
+    font-weight: 700; 
+    color: white; 
+    background-color: rgb(194, 73, 20);
+  }
+  footer{
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+footer div{
+  padding: .5rem;
+}
+header{
+  padding: 0 2rem;
+}
+header h1{
+  font-size: 30px;
+}
+header p{
+  font-size: 15px;
+}
+header img{
+  display: none;
+}
+}
